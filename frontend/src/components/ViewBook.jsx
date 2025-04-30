@@ -15,7 +15,7 @@ const ViewBook = () => {
   const handleView = async () => {
     try {
       setLoading(true);
-      const res = await axios.get('http://localhost:9000/books');
+      const res = await axios.get('https://book-app-fqve.onrender.com/books');
       setBooks(res.data);
       setError(null);
     } catch (err) {
